@@ -12,7 +12,7 @@
         <!-- Header / Navigation -->
         <header>
             <nav>
-                <a href="#" class="nav-brand">~/simon</a>
+                <a href="#" class="nav-brand">~/sai</a>
                 <div class="nav-links">
                     <a href="#about">about</a>
                     <a href="#work">work</a>
@@ -24,9 +24,7 @@
 
         <!-- Hero Section -->
         <section class="hero">
-            <div class="avatar-container">
-                <img src="photo.jpeg" alt="Simon Londono" class="avatar">
-            </div>
+            <div class="avatar-container">Sai</div>
             <h1>Simon Londono</h1>
             <p class="tagline">Data & AI Engineer</p>
             <p class="intro">
@@ -34,6 +32,9 @@
                 <span class="highlight">Data Architecture</span> and
                 <span class="highlight">creative solutions</span>.
             </p>
+            <a href="resume.pdf" download class="resume-btn">
+                [download resume]
+            </a>
         </section>
 
         <!-- About Section -->
@@ -45,7 +46,7 @@
                 <p>
                     Hello! I'm a data engineer passionate about building
                     elegant solutions to data problems. I enjoy working across
-                    Azure/AWS clouds and exploring new technologies.
+                    Azure/AWS clouds, meddeling with Databricks ecosystem and exploring new technologies.
                 </p>
                 <p>
                     When I'm not coding, you can find me scuba diving or watching anime.
@@ -61,19 +62,27 @@
             <div class="work-list">
                 <div class="work-item">
                     <div class="work-header">
-                        <span class="work-title">Data Engineer</span>
-                        <span class="work-date">2024 - Present</span>
+                        <span class="work-title">Data Engineer (Mid)</span>
+                        <span class="work-date">Jun 2024 - Present</span>
                     </div>
                     <p class="work-company">Idata Global</p>
-                    <p class="work-description">Description of your role and achievements.</p>
+                    <p class="work-description">Led a migration and redesign of an enterprise analytics platform (150+ pipelines), optimizing PySpark jobs, CI/CD in Azure DevOps, and a medallion-style ingestion framework. Built a unified Microsoft Fabric data solution for a logistics client and improved end-to-end Databricks pipeline performance.</p>
                 </div>
                 <div class="work-item">
                     <div class="work-header">
-                        <span class="work-title">Analytics Intern</span>
-                        <span class="work-date">2023</span>
+                        <span class="work-title">Data Science / Analytics Intern</span>
+                        <span class="work-date">Nov 2022 - May 2023</span>
                     </div>
                     <p class="work-company">Grupo Exito</p>
-                    <p class="work-description">Description of your role and achievements.</p>
+                    <p class="work-description">Built a machine learning model to estimate cost of acquisition and presented results to the VP of Marketing. Used Python and SQL to support joint research with the Colombian Central Bank, improving outlier handling in customer lifetime value modeling.</p>
+                </div>
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="work-title">Corporate Venture Capital & Business Analytics Extern</span>
+                        <span class="work-date">Sep 2022 - Nov 2022</span>
+                    </div>
+                    <p class="work-company">HP Tech Ventures & Paragon One</p>
+                    <p class="work-description">Conducted market research on pre-seed startups and delivered pitch presentations to HP Tech Ventures partners.</p>
                 </div>
             </div>
         </section>
@@ -85,50 +94,49 @@
             </h2>
             <div class="projects-grid">
                 <article class="project-card">
-                    <h3 class="project-title">Project One</h3>
+                    <h3 class="project-title">Search-Enhanced RAG Pipeline</h3>
                     <p class="project-description">
-                        A brief description of this amazing project and what technologies
-                        were used to build it.
+                        Modular retrieval-augmented generation architecture with prompt customization,
+                        embedding updates, and real-time interaction for project management use cases.
                     </p>
                     <div class="project-tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">Weaviate</span>
+                        <span class="tag">Ollama</span>
+                        <span class="tag">LLaMA 3.2</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link">[source]</a>
-                        <a href="#" class="project-link">[demo]</a>
+                        <a href="https://github.com/SimonLondono01/SE-RAG-V2" class="project-link" target="_blank" rel="noopener">[source]</a>
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3 class="project-title">Project Two</h3>
+                    <h3 class="project-title">ML Model Deployment on AWS EC2</h3>
                     <p class="project-description">
-                        Another interesting project with its own unique challenges
-                        and solutions.
+                        Deployed a machine learning regression model with FastAPI on AWS EC2
+                        using a systemd service for reliable, persistent runtime.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Python</span>
                         <span class="tag">FastAPI</span>
-                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">AWS EC2</span>
+                        <span class="tag">systemd</span>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">[source]</a>
-                        <a href="#" class="project-link">[demo]</a>
+                                        <div class="project-links">
+                        <a href="https://github.com/SimonLondono01/Despliegue-mlops" class="project-link" target="_blank" rel="noopener">[source]</a>
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3 class="project-title">Project Three</h3>
+                    <h3 class="project-title">coloringBookGenerator</h3>
                     <p class="project-description">
-                        Yet another cool project that showcases different skills
-                        and technologies.
+                        Second place Hackaton project, for creating coloring books about specific topic, with specific design to sell in Amazon.
                     </p>
                     <div class="project-tags">
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Next.js</span>
-                        <span class="tag">Prisma</span>
+                        <span class="tag">ClaudeCode</span>
+                        <span class="tag">NanoBanana</span>
+                        <span class="tag">FastAPI</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link">[source]</a>
+                        <a href="https://github.com/carlosxdcubo/coloringBookGenerator" class="project-link" target="_blank" rel="noopener">[source]</a>
                     </div>
                 </article>
             </div>
@@ -141,10 +149,10 @@
             </h2>
             <div class="content-block">
                 <ul class="interests-list">
-                    <li><span class="bullet">#</span> Web Development & Architecture</li>
-                    <li><span class="bullet">#</span> Open Source Software</li>
+                    <li><span class="bullet">#</span> Data Architecture</li>
+                    <li><span class="bullet">#</span> MLOPS</li>
                     <li><span class="bullet">#</span> Machine Learning & AI</li>
-                    <li><span class="bullet">#</span> [Add your interests]</li>
+                    <li><span class="bullet">#</span> Languages (English,Spanish,Portuguese,French)</li>
                 </ul>
             </div>
         </section>
@@ -155,7 +163,7 @@
                 <span class="prompt">&gt;</span> contact --help
             </h2>
             <div class="contact-links">
-                <a href="https://github.com/Saimon2001" class="contact-link" target="_blank" rel="noopener">
+                <a href="https://github.com/SimonLondono01" class="contact-link" target="_blank" rel="noopener">
                     <span class="link-icon">[gh]</span> GitHub
                 </a>
                 <a href="https://www.linkedin.com/in/simon-londono-rojas/" class="contact-link" target="_blank" rel="noopener">
