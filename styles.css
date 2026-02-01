@@ -38,6 +38,10 @@ body {
     overflow-x: hidden;
 }
 
+.is-hidden {
+    display: none !important;
+}
+
 /* Container */
 .container {
     max-width: 800px;
@@ -136,6 +140,38 @@ nav {
 .highlight {
     color: var(--text-primary);
     border-bottom: 1px dashed var(--accent-dim);
+}
+
+.skill-banner {
+    margin-top: 1.25rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--border-color);
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.08), rgba(0, 0, 0, 0.4));
+    border-radius: 12px;
+}
+
+.skill-label {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-bottom: 0.6rem;
+}
+
+.skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-chip {
+    border: 1px solid var(--accent-dim);
+    color: var(--accent);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background: rgba(0, 255, 136, 0.08);
 }
 
 .resume-btn {
