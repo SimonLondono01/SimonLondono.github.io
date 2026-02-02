@@ -3,22 +3,34 @@
 (function() {
     'use strict';
 
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href === '#') return;
+    const pages = Array.from(document.querySelectorAll('.page'));
+    const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
+    const defaultRoute = '#home';
 
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
+    function setActiveRoute(hash) {
+        const targetHash = hash && hash !== '#' ? hash : defaultRoute;
+        const targetId = targetHash.replace('#', '');
+        const page = document.getElementById(targetId);
+
+        pages.forEach(section => section.classList.remove('is-active'));
+        navLinks.forEach(link => link.classList.remove('is-active'));
+
+        if (page) {
+            page.classList.add('is-active');
+            page.scrollTop = 0;
+        }
+
+        const activeLink = navLinks.find(link => link.getAttribute('href') === `#${targetId}`);
+        if (activeLink) {
+            activeLink.classList.add('is-active');
+        }
+    }
+
+    window.addEventListener('hashchange', () => {
+        setActiveRoute(window.location.hash);
     });
+
+    setActiveRoute(window.location.hash);
 
     // Console easter egg
     console.log('%c> Welcome to my terminal portfolio!', 'color: #00ff88; font-family: monospace; font-size: 14px;');

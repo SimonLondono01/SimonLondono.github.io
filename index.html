@@ -12,206 +12,242 @@
         <!-- Header / Navigation -->
         <header>
             <nav>
-                <a href="#" class="nav-brand">~/sai</a>
+                <a href="#home" class="nav-brand">~/sai</a>
                 <div class="nav-links">
-                    <a href="#about">about</a>
+                    <a href="#home">home</a>
                     <a href="#work">work</a>
                     <a href="#projects">projects</a>
-                    <a href="#contact">contact</a>
+                    <a href="#about">about</a>
                 </div>
             </nav>
         </header>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="avatar-container">
-                <img src="photo2.jpeg" alt="Simon Londono" class="avatar">
-            </div>
-            <h1>Simon Londono</h1>
-            <p class="tagline">Data & AI Engineer</p>
-            <p class="intro">
-                I build solutions for Data. Currently focused on
-                <span class="highlight">Data Architecture</span> and
-                <span class="highlight">locally hosting LLMs</span>.
-            </p>
-            <a href="resume.pdf" download class="resume-btn is-hidden">
-                [download resume]
-            </a>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <h2 class="section-title">
-                <span class="prompt">&gt;</span> about.txt
-            </h2>
-            <div class="content-block">
-                <p>
-                    Hello! I'm a data engineer passionate about building
-                    elegant solutions to data problems. I enjoy working across
-                    Azure/AWS clouds, meddeling with Databricks and exploring new technologies.
-                </p>
-                <p>
-                    When I'm not coding, you can find me scuba diving or watching anime.
-                </p>
-                <div class="skill-banner">
-                    <span class="skill-label">Languages</span>
-                    <div class="skill-chips">
-                        <span class="skill-chip">Python</span>
-                        <span class="skill-chip">PySpark</span>
-                        <span class="skill-chip">SQL</span>
-                        <span class="skill-chip">Bash</span>
+        <!-- Home Page -->
+        <section id="home" class="page">
+            <div class="page-inner">
+                <div class="hero">
+                    <div class="avatar-container">
+                        <img src="photo2.jpeg" alt="Simon Londono" class="avatar">
                     </div>
-                </div>
-                <div class="skill-banner">
-                    <span class="skill-label">Infrastructure & Backend</span>
-                    <div class="skill-chips">
-                        <span class="skill-chip">Azure & AWS</span>
-                        <span class="skill-chip">Docker</span>
-                        <span class="skill-chip">FastAPI</span>
-                        <span class="skill-chip">postgresql</span>
-                        <span class="skill-chip">mongodb</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Work Section -->
-        <section id="work" class="section">
-            <h2 class="section-title">
-                <span class="prompt">&gt;</span> work_history.log
-            </h2>
-            <div class="work-list">
-                <div class="work-item">
-                    <div class="work-header">
-                        <span class="work-title">Data Engineer (Mid-level)</span>
-                        <span class="work-date">Jun 2024 - Present</span>
-                    </div>
-                    <p class="work-company">Idata Global</p>
-                    <ul class="work-description">
-                        <li>Led the migration and redesign of enterprise analytics architecture with 150+ pipelines, pyspark optimization, CICD with AzureDevops and orchestrating ingestion frameworks based on medallion architecture.</li>
-                        <li>Architected a unified data solution in Microsoft Fabric for a logistics client, integrating transactional data from operations in Miami and Panama.</li>
-                        <li>Improved end-to-end pipeline performance in Databricks, optimizing ingestion, transformation, and sequential processing workflows.</li>
-                    </ul>
-                </div>
-                <div class="work-item">
-                    <div class="work-header">
-                        <span class="work-title">Data Science / Analytics Intern</span>
-                        <span class="work-date">Nov 2022 - May 2023</span>
-                    </div>
-                    <p class="work-company">Grupo Exito</p>
-                    <ul class="work-description">
-                        <li>Proposed and developed a machine learning model to estimate “Cost of Acquisition” presented to the VP of Marketing.</li>
-                        <li>Used Python and SQL to support joint research with the Colombian Central Bank.</li>
-                    </ul>
-                </div>
-                <div class="work-item">
-                    <div class="work-header">
-                        <span class="work-title">Corporate Venture Capital & Business Analytics Extern</span>
-                        <span class="work-date">Sep 2022 - Nov 2022</span>
-                    </div>
-                    <p class="work-company">HP Tech Ventures & Paragon One</p>
-                    <ul class="work-description">
-                        <li>Conducted market research with Data Analytics on pre-seed startups.</li>
-                        <li>Delivered pitch presentations to HP Tech Ventures partners.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2 class="section-title">
-                <span class="prompt">&gt;</span> ls projects/
-            </h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3 class="project-title">Search-Enhanced RAG Pipeline</h3>
-                    <p class="project-description">
-                        Modular retrieval-augmented generation architecture with prompt customization,
-                        embedding updates, and real-time interaction for project management use cases.
+                    <h1>Simon Londono</h1>
+                    <p class="tagline">Data & AI Engineer</p>
+                    <p class="intro">
+                        I build solutions for Data. Currently focused on
+                        <span class="highlight">Data Architecture</span> and
+                        <span class="highlight">locally hosting LLMs</span>.
                     </p>
-                    <div class="project-tags">
-                        <span class="tag">RAG</span>
-                        <span class="tag">Weaviate</span>
-                        <span class="tag">Ollama</span>
-                        <span class="tag">LLaMA 3.2</span>
+                    <a href="resume.pdf" download class="resume-btn is-hidden">
+                        [download resume]
+                    </a>
+                </div>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="prompt">&gt;</span> about.txt
+                    </h2>
+                    <div class="content-block">
+                        <p>
+                            Hello! I'm a data engineer passionate about building
+                            elegant solutions to data problems. I enjoy working across
+                            Azure/AWS clouds, meddeling with Databricks and exploring new technologies.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me scuba diving or watching anime.
+                        </p>
+                        <div class="skill-banner">
+                            <span class="skill-label">Languages</span>
+                            <div class="skill-chips">
+                                <span class="skill-chip">Python</span>
+                                <span class="skill-chip">PySpark</span>
+                                <span class="skill-chip">SQL</span>
+                                <span class="skill-chip">Bash</span>
+                            </div>
+                        </div>
+                        <div class="skill-banner">
+                            <span class="skill-label">Infrastructure & Backend</span>
+                            <div class="skill-chips">
+                                <span class="skill-chip">Azure & AWS</span>
+                                <span class="skill-chip">Docker</span>
+                                <span class="skill-chip">FastAPI</span>
+                                <span class="skill-chip">postgresql</span>
+                                <span class="skill-chip">mongodb</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SimonLondono01/SE-RAG-V2" class="project-link" target="_blank" rel="noopener">[source]</a>
+                </section>
+            </div>
+        </section>
+
+        <!-- Work Page -->
+        <section id="work" class="page">
+            <div class="page-inner">
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="prompt">&gt;</span> work_history.log
+                    </h2>
+                    <div class="work-list">
+                        <div class="work-item">
+                            <div class="work-header">
+                                <span class="work-title">Data Engineer (Mid-level)</span>
+                                <span class="work-date">Jun 2024 - Present</span>
+                            </div>
+                            <p class="work-company">Idata Global</p>
+                            <ul class="work-description">
+                                <li>Led the migration and redesign of enterprise analytics architecture with 150+ pipelines, pyspark optimization, CICD with AzureDevops and orchestrating ingestion frameworks based on medallion architecture.</li>
+                                <li>Architected a unified data solution in Microsoft Fabric for a logistics client, integrating transactional data from operations in Miami and Panama.</li>
+                                <li>Improved end-to-end pipeline performance in Databricks, optimizing ingestion, transformation, and sequential processing workflows.</li>
+                            </ul>
+                        </div>
+                        <div class="work-item">
+                            <div class="work-header">
+                                <span class="work-title">Data Science / Analytics Intern</span>
+                                <span class="work-date">Nov 2022 - May 2023</span>
+                            </div>
+                            <p class="work-company">Grupo Exito</p>
+                            <ul class="work-description">
+                                <li>Proposed and developed a machine learning model to estimate “Cost of Acquisition” presented to the VP of Marketing.</li>
+                                <li>Used Python and SQL to support joint research with the Colombian Central Bank.</li>
+                            </ul>
+                        </div>
+                        <div class="work-item">
+                            <div class="work-header">
+                                <span class="work-title">Corporate Venture Capital & Business Analytics Extern</span>
+                                <span class="work-date">Sep 2022 - Nov 2022</span>
+                            </div>
+                            <p class="work-company">HP Tech Ventures & Paragon One</p>
+                            <ul class="work-description">
+                                <li>Conducted market research with Data Analytics on pre-seed startups.</li>
+                                <li>Delivered pitch presentations to HP Tech Ventures partners.</li>
+                            </ul>
+                        </div>
                     </div>
-                </article>
-                <article class="project-card">
-                    <h3 class="project-title">ML Model Deployment on AWS EC2</h3>
-                    <p class="project-description">
-                        Deployed a machine learning regression model with FastAPI on AWS EC2
-                        using a systemd service for reliable, persistent runtime.
+                </section>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <section id="projects" class="page">
+            <div class="page-inner">
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="prompt">&gt;</span> ls projects/
+                    </h2>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <h3 class="project-title">Search-Enhanced RAG Pipeline</h3>
+                            <p class="project-description">
+                                Modular retrieval-augmented generation architecture with prompt customization,
+                                embedding updates, and real-time interaction for project management use cases.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">RAG</span>
+                                <span class="tag">Weaviate</span>
+                                <span class="tag">Ollama</span>
+                                <span class="tag">LLaMA 3.2</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SimonLondono01/SE-RAG-V2" class="project-link" target="_blank" rel="noopener">[source]</a>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <h3 class="project-title">ML Model Deployment on AWS EC2</h3>
+                            <p class="project-description">
+                                Deployed a machine learning regression model with FastAPI on AWS EC2
+                                using a systemd service for reliable, persistent runtime.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">AWS EC2</span>
+                                <span class="tag">systemd</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SimonLondono01/Despliegue-mlops" class="project-link" target="_blank" rel="noopener">[source]</a>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <h3 class="project-title">coloringBookGenerator</h3>
+                            <p class="project-description">
+                                Second place Hackaton project, for creating coloring books about specific topic, with specific design to sell in Amazon.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">ClaudeCode</span>
+                                <span class="tag">NanoBanana</span>
+                                <span class="tag">FastAPI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/carlosxdcubo/coloringBookGenerator" class="project-link" target="_blank" rel="noopener">[source]</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="page-inner">
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="prompt">&gt;</span> about_extended.md
+                    </h2>
+                    <div class="content-block">
+                        <p>
+                            I'm a data engineer focused on designing clean, reliable systems that turn
+                            messy inputs into dependable analytics. I enjoy the intersection of data
+                            architecture, cloud infrastructure, and pragmatic software engineering.
+                        </p>
+                        <p>
+                            Recent work has included rebuilding enterprise pipelines, streamlining ingestion
+                            frameworks, and moving teams toward a medallion architecture with Databricks and
+                            Microsoft Fabric. I like collaborating with stakeholders early to define the
+                            right data contracts and delivery milestones.
+                        </p>
+                        <p>
+                            Outside of work, I'm curious about languages and communities, and I recharge with
+                            scuba diving, anime, and long-form reading.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="prompt">&gt;</span> cat interests.md
+                    </h2>
+                    <div class="content-block">
+                        <ul class="interests-list">
+                            <li><span class="bullet">#</span> Data Architecture</li>
+                            <li><span class="bullet">#</span> MLOPS</li>
+                            <li><span class="bullet">#</span> Machine Learning & AI</li>
+                            <li><span class="bullet">#</span> Languages (English,Spanish,Portuguese,French)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <span class="prompt">&gt;</span> contact --help
+                    </h2>
+                    <div class="contact-links">
+                        <a href="https://github.com/SimonLondono01" class="contact-link" target="_blank" rel="noopener">
+                            <span class="link-icon">[gh]</span> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/simon-londono-rojas/" class="contact-link" target="_blank" rel="noopener">
+                            <span class="link-icon">[in]</span> LinkedIn
+                        </a>
+                        <a href="mailto:Simonlr2001@gmail.com" class="contact-link">
+                            <span class="link-icon">[@]</span> Email
+                        </a>
+                    </div>
+                </section>
+
+                <footer>
+                    <p class="copyright">
+                        <span class="cursor">_</span> Simon Londono &copy; 2026
                     </p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">AWS EC2</span>
-                        <span class="tag">systemd</span>
-                    </div>
-                                        <div class="project-links">
-                        <a href="https://github.com/SimonLondono01/Despliegue-mlops" class="project-link" target="_blank" rel="noopener">[source]</a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <h3 class="project-title">coloringBookGenerator</h3>
-                    <p class="project-description">
-                        Second place Hackaton project, for creating coloring books about specific topic, with specific design to sell in Amazon.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">ClaudeCode</span>
-                        <span class="tag">NanoBanana</span>
-                        <span class="tag">FastAPI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/carlosxdcubo/coloringBookGenerator" class="project-link" target="_blank" rel="noopener">[source]</a>
-                    </div>
-                </article>
+                </footer>
             </div>
         </section>
-
-        <!-- Interests Section -->
-        <section class="section">
-            <h2 class="section-title">
-                <span class="prompt">&gt;</span> cat interests.md
-            </h2>
-            <div class="content-block">
-                <ul class="interests-list">
-                    <li><span class="bullet">#</span> Data Architecture</li>
-                    <li><span class="bullet">#</span> MLOPS</li>
-                    <li><span class="bullet">#</span> Machine Learning & AI</li>
-                    <li><span class="bullet">#</span> Languages (English,Spanish,Portuguese,French)</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2 class="section-title">
-                <span class="prompt">&gt;</span> contact --help
-            </h2>
-            <div class="contact-links">
-                <a href="https://github.com/SimonLondono01" class="contact-link" target="_blank" rel="noopener">
-                    <span class="link-icon">[gh]</span> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/simon-londono-rojas/" class="contact-link" target="_blank" rel="noopener">
-                    <span class="link-icon">[in]</span> LinkedIn
-                </a>
-                <a href="mailto:Simonlr2001@gmail.com" class="contact-link">
-                    <span class="link-icon">[@]</span> Email
-                </a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p class="copyright">
-                <span class="cursor">_</span> Simon Londono &copy; 2026
-            </p>
-        </footer>
     </div>
 
     <script src="script.js"></script>
