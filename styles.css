@@ -413,6 +413,10 @@ nav {
     text-decoration: none;
     font-size: 0.9rem;
     transition: all 0.2s;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    appearance: none;
 }
 
 .contact-link:hover {
@@ -423,6 +427,45 @@ nav {
 .link-icon {
     color: var(--accent);
     font-weight: 600;
+}
+
+.contact-email {
+    position: relative;
+}
+
+.contact-email .contact-email-value,
+.contact-email .contact-email-copy {
+    display: none;
+}
+
+.contact-email.is-open .contact-email-label {
+    display: none;
+}
+
+.contact-email.is-open .contact-email-value,
+.contact-email.is-open .contact-email-copy {
+    display: inline-flex;
+}
+
+.contact-email-value {
+    color: var(--text-primary);
+    letter-spacing: 0.2px;
+}
+
+.contact-email-copy {
+    margin-left: 0.25rem;
+    padding: 0.2rem 0.45rem;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+}
+
+.contact-email.is-copied .contact-email-copy {
+    border-color: var(--accent);
+    color: var(--text-primary);
 }
 
 /* Footer */
